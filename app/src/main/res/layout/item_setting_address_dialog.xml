@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="半透明"
+        android:textColor="#3C3F41"
         android:textSize="18sp"/>
 
     <ImageView
@@ -25,8 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_margin="10dp" />
+        android:src="@drawable/tick"/>
 
 </RelativeLayout>
