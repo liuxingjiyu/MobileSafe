@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="功能列表"
+        style="@style/TitleStyle" />
+    <com.taxi.mobilesafe.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是您的手机安全卫士, 我会时刻保护您手机的安全! 啊哈哈哈哈"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:padding="5dp"
+
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"/>
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

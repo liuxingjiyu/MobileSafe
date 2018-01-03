@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+	    style="@style/TitleStyle"
+	    android:text="2.手机卡绑定"/>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#272822"
+	    android:textSize="20sp"
+	    android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+	    android:text="通过绑定sim卡:"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#272822"
+		android:textSize="18sp"
+		android:layout_margin="10dp"
+		android:text="下次重启手机如果发现sim卡变化,就会发送报警短信"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/bt_sim_bound"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/selector_number_btn_bg"
+			android:stateListAnimator="@null"
+			android:text="点击绑定/解绑sim卡"
+			android:textSize="20sp"/>
+
+		<ImageView
+			android:id="@+id/iv_unlock"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/unlock"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="20dp"/>
+	</RelativeLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <ImageView
+	        android:background="@drawable/bind"
+	        android:layout_centerInParent="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <!-- 图片选择器,在选中和未选中的过程中,切换展示图片 -->
+
+		<LinearLayout
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="20dp">
+
+			<ImageView
+				android:background="@android:drawable/presence_invisible"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<ImageView
+				android:background="@android:drawable/presence_online"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<ImageView
+				android:background="@android:drawable/presence_invisible"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<ImageView
+				android:background="@android:drawable/presence_invisible"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<ImageView
+				android:background="@android:drawable/presence_invisible"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+	   	<Button
+	   	    style="@style/preBtn"/>
+	   	<Button
+	   	    style="@style/nextBtn"/>
+	</RelativeLayout>
+
+</LinearLayout>

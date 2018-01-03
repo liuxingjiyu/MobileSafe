@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <drawable name="screen_background_focused">#A5FFD6</drawable>
+    <drawable name="screen_background_normal">#ffffff</drawable>
+
+    <color name="btn_confirm_select_normal">#07aced</color>
+    <color name="btn_confirm_select_pressed">#f9f504</color>
+
+    <color name="location_toast">#2c82f2</color>
+    <color name="bt_selected">#f1dd5b</color>
+    <color name="normal_bt_selected">#fff</color>
+</resources>

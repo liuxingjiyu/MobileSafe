@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobilesafe="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView
+       style="@style/TitleStyle"
+       android:text="设置中心"/>
+    <com.taxi.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_auto_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        mobilesafe:title="自动更新"
+        mobilesafe:itbackground="first">
+    </com.taxi.mobilesafe.view.SettingItemView>
+
+    <com.taxi.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_attribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        mobilesafe:title="归属地显示设置"
+        mobilesafe:itbackground="middle">
+    </com.taxi.mobilesafe.view.SettingItemView>
+
+    <com.taxi.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_attri_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        mobilesafe:title="归属地设置风格"
+        mobilesafe:itbackground="last"
+        mobilesafe:isToggle="true">
+    </com.taxi.mobilesafe.view.SettingItemView>
+
+</LinearLayout>

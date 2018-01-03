@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mobilesafe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taxi.mobilesafe.activity.AToolActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="高级工具" />
+
+    <com.taxi.mobilesafe.view.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        mobilesafe:title="图案密码"
+        mobilesafe:itbackground="first"
+        mobilesafe:isToggle="true">
+    </com.taxi.mobilesafe.view.SettingItemView>
+
+    <com.taxi.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_address_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-1dp"
+        mobilesafe:isToggle="true"
+        mobilesafe:itbackground="last"
+        mobilesafe:title="查询归属地">
+    </com.taxi.mobilesafe.view.SettingItemView>
+
+</LinearLayout>
