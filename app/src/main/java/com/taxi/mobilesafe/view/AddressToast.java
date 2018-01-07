@@ -3,10 +3,12 @@ package com.taxi.mobilesafe.view;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
+import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.taxi.mobilesafe.R;
 
@@ -20,6 +22,7 @@ public class AddressToast {
     private final WindowManager.LayoutParams mParams = new WindowManager.LayoutParams();
     private View view;
     private TextView mLocation;
+    private long[] mHits = new long[5];
     private int startX;
     private int startY;
 
@@ -63,7 +66,18 @@ public class AddressToast {
                     case MotionEvent.ACTION_UP:
                         break;
                 }
-                return true;
+                return false;
+            }
+        });
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
+                mHits[mHits.length-1] = SystemClock.uptimeMillis();
+                if(mHits[mHits.length-1]-mHits[0]<500){
+                    //响应了一个三击事件
+                    Toast.makeText(mContext, "超级赛亚人!!!!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         mLocation = view.findViewById(R.id.tv_location_toast);
